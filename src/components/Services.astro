@@ -7,27 +7,39 @@ import "../styles/global.css";
     <div class="container mx-auto py-10 text-center">
         <h2 class="text-2xl font-bold">Nuestros servicios</h2>
         <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 p-6">
-            <div class="shadow-lg rounded-lg p-6 hover:shadow-xl border border-blue-300">
-                <h2 class="font-bold text-lg">Servicio 1</h2>
-                <img src="/src/assets/service1.jpg" alt="Servicio 1" class="w-full h-48 object-cover rounded-t-lg my-4">
-                <p class="text-gray-300">Descripción del servicio 1.</p>
-            </div>
-            <div class="shadow-lg rounded-lg p-6 hover:shadow-xl border border-blue-300">
-                <h2 class="font-bold text-lg">Servicio 2</h2>
-                <img src="/src/assets/service2.jpg" alt="Servicio 1" class="w-full h-48 object-cover rounded-t-lg my-4">
-                <a href="#" class="text-blue-500 hover:underline">Ver más</a>
-            </div>
-            <div class="shadow-lg rounded-lg p-6 hover:shadow-xl border border-blue-300">
-                <h2 class="font-bold text-lg">Servicio 3</h2>
-                <img src="/src/assets/service3.jpg" alt="Servicio 1" class="w-full h-48 object-cover rounded-t-lg my-4">
-                <p class="text-gray-300">Descripción del servicio 3.</p>
-            </div>
-            <div class="shadow-lg rounded-lg p-6 hover:shadow-xl border border-blue-300">
-                <h2 class="font-bold text-lg">Servicio 4</h2>
-                <p class="text-gray-300">Descripción del servicio 4.</p>
-            </div>
+            <a href="#">
+            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
+                <img src="/src/assets/service1.jpg" alt="Servicio 1" class="w-full h-full object-cover rounded-lg">
+                <figcaption class="absolute inset-0 flex items-end justify-center">
+                    <h2 class="font-bold text-lg">LAVADO INTERIOR-EXTERIOR COMPLETOS</h2>
+                </figcaption>
+            </figure>
+            </a>
+            <a href="#">
+            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
+                <img src="/src/assets/service2.jpg" alt="Servicio 2" class="w-full h-full object-cover rounded-lg">
+                <figcaption class="absolute inset-0 flex items-end justify-center">
+                    <h2 class="font-bold text-lg">LAVADO INTEGRAL DE TAPICERÍA</h2>
+                </figcaption>
+            </figure>
+            </a>
+            <a href="#">
+            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
+                <img src="/src/assets/service3.jpg" alt="Servicio 3" class="w-full h-full object-cover rounded-lg">
+                <figcaption class="absolute inset-0 flex items-end justify-center">
+                    <h2 class="font-bold text-lg">MECÁNICA RÁPIDA</h2>
+            </figure>
+            </a>
+            <a href="#">
+            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
+                <img src="/src/assets/service4.jpg" alt="Servicio 4" class="w-full h-full object-cover rounded-lg">
+                <figcaption class="absolute inset-0 flex items-end justify-center">
+                    <h2 class="font-bold text-lg">REPARACIÓN DE TAPICERÍA</h2>
+                </figcaption>
+            </figure>
+            </a>
         </div>
         <div class="flex justify-end mt-2 mr-8">
-            <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-2xl hover:bg-blue-600">Ver servicios</a>
+            <a href="#" class="bg-blue-500 px-8 py-2 rounded-2xl hover:bg-blue-700 transition-transform duration-300 hover:scale-105">Ver servicios</a>
         </div>
 </section>
