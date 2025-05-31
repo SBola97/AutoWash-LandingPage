@@ -1,0 +1,28 @@
+---
+import "../styles/global.css";
+import { services } from "../data/services";
+
+interface Props {
+    limit?: number;
+}
+
+const { limit } = Astro.props;
+const displayServices = limit ? services.slice(0, limit) : services;
+---
+<div class="grid grid-cols-1 gap-6 lg:grid-cols-4 p-6">
+    {displayServices.map((service) => (
+        <a href={service.href}>
+            <figure class="relative shadow-2xl rounded-lg w-full h-[300px] mt-4 transition-transform duration-300 hover:scale-105">
+                <img 
+                    src={service.image} 
+                    alt={service.alt} 
+                    class="w-full h-full object-cover rounded-lg"
+                    loading="lazy"
+                >
+                <figcaption class="absolute inset-0 flex items-end justify-center p-4">
+                    <h2 class="font-bold text-lg">{service.title}</h2>
+                </figcaption>
+            </figure>
+        </a>
+    ))}
+</div>

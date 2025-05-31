@@ -1,45 +1,14 @@
 ---
 import "../styles/global.css";
+import ServicesGrid from "./ServicesGrid.astro";
 ---
-
 
 <section>
     <div class="container mx-auto py-10 text-center">
         <h2 class="text-2xl font-bold">Nuestros servicios</h2>
-        <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 p-6">
-            <a href="#">
-            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
-                <img src="/src/assets/service1.jpg" alt="Servicio 1" class="w-full h-full object-cover rounded-lg">
-                <figcaption class="absolute inset-0 flex items-end justify-center">
-                    <h2 class="font-bold text-lg">LAVADO INTERIOR-EXTERIOR COMPLETOS</h2>
-                </figcaption>
-            </figure>
-            </a>
-            <a href="#">
-            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
-                <img src="/src/assets/service2.jpg" alt="Servicio 2" class="w-full h-full object-cover rounded-lg">
-                <figcaption class="absolute inset-0 flex items-end justify-center">
-                    <h2 class="font-bold text-lg">LAVADO INTEGRAL DE TAPICERÍA</h2>
-                </figcaption>
-            </figure>
-            </a>
-            <a href="#">
-            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
-                <img src="/src/assets/service3.jpg" alt="Servicio 3" class="w-full h-full object-cover rounded-lg">
-                <figcaption class="absolute inset-0 flex items-end justify-center">
-                    <h2 class="font-bold text-lg">MECÁNICA RÁPIDA</h2>
-            </figure>
-            </a>
-            <a href="#">
-            <figure class="relative shadow-2xl rounded-lg w-full h-full mt-4 transition-transform duration-300 hover:scale-105">
-                <img src="/src/assets/service4.jpg" alt="Servicio 4" class="w-full h-full object-cover rounded-lg">
-                <figcaption class="absolute inset-0 flex items-end justify-center">
-                    <h2 class="font-bold text-lg">REPARACIÓN DE TAPICERÍA</h2>
-                </figcaption>
-            </figure>
-            </a>
-        </div>
+        <ServicesGrid limit={4}/>
         <div class="flex justify-end mt-2 mr-8">
-            <a href="#" class="bg-blue-500 px-8 py-2 rounded-2xl hover:bg-blue-700 transition-transform duration-300 hover:scale-105">Ver servicios</a>
+            <a href="/services" class="bg-blue-600 px-8 py-2 rounded-2xl transition-transform duration-300 hover:scale-105">Ver servicios</a>
         </div>
+    </div>
 </section>
