@@ -4,11 +4,15 @@ import ServicesGrid from "./ServicesGrid.astro";
 ---
 
 <section>
-    <div class="container mx-auto py-10 text-center">
-        <h2 class="text-2xl font-bold">Nuestros servicios</h2>
-        <ServicesGrid limit={4}/>
-        <div class="flex justify-end mt-2 mr-8">
-            <a href="/services" class="bg-blue-600 px-8 py-2 rounded-2xl transition-transform duration-300 hover:scale-105">Ver servicios</a>
-        </div>
+  <div class="container mx-auto py-10 text-center">
+    <h2 class="text-2xl font-bold">Nuestros servicios</h2>
+    <ServicesGrid limit={4} />
+    <div class="flex justify-end mt-2 mr-8">
+      <a
+        href="/services"
+        class="bg-blue-600 px-8 py-2 rounded-2xl text-md transition-transform duration-300 hover:scale-105"
+        >Ver servicios</a
+      >
     </div>
+  </div>
 </section>

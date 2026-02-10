@@ -7,9 +7,9 @@ interface Props {
 }
 
 const { limit } = Astro.props;
-const displayServices = limit ? services.slice(0, limit) : services;
+const displayServices = limit ? services.slice(0, 3) : services;
 ---
-<div class="grid grid-cols-1 gap-6 lg:grid-cols-4 p-6">
+<div class="grid grid-cols-1 gap-6 lg:grid-cols-3 p-6">
     {displayServices.map((service) => (
         <a href={service.href}>
             <figure class="relative shadow-2xl rounded-lg w-full h-[300px] mt-4 transition-transform duration-300 hover:scale-105">

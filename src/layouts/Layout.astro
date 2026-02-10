@@ -6,24 +6,24 @@ import Footer from "../components/Footer.astro";
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>AutoWash 3C</title>
-	</head>
-	<body class="bg-gray-900 text-white">
-		<Header />
-		<main>
-			<slot />
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" sizes="16x16" />
+    <meta name="generator" content={Astro.generator} />
+    <title>AutoWash 3C</title>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html{
-		font-family: system-ui, sans-serif;
-	}
+  html {
+    font-family: system-ui, sans-serif;
+  }
 </style>

@@ -1,16 +1,63 @@
 ---
 ---
 
-<header class="relative top-0 w-full bg-[#13151a] border-b border-gray-700">
-   <div class="container mx-auto p-6 flex justify-between items-center">
+<header
+  x-data="{ open: false }"
+  class="relative top-0 w-full bg-[#13151a] border-b border-gray-700"
+>
+  <div class="container mx-auto p-6 flex justify-between items-center">
     <a href="/" class="text-2xl text-green-400">
-        <img src="/src/assets/logo-autowash.jpeg" alt="logo-autowash" class="h-10 w-auto">
+      <img
+        src="/src/assets/logo-autowash.jpeg"
+        alt="logo-autowash"
+        class="h-10 w-auto"
+      />
     </a>
     <!-- Desktop menu -->
     <nav class="hidden md:flex space-x-6">
-        <a href="/" class="font-bold hover:underline">Inicio</a>
-        <a href="/services" class="font-bold hover:underline">Servicios</a>
-        <a href="/" class="font-bold hover:underline">Contáctanos</a>
+      <a href="/" class="font-bold hover:underline">Inicio</a>
+      <a href="/somos" class="font-bold hover:underline">Quiénes Somos</a>
+      <a href="/services" class="font-bold hover:underline">Servicios</a>
+      <a
+        href="https://wa.me/+34689829723"
+        target="_blank"
+        class="font-bold hover:underline decoration-green-400 hover:text-green-400"
+        >Contáctanos</a
+      >
     </nav>
-   </div>
+    <!-- Mobile menu button -->
+    <button @click="open = !open" class="md:hidden focus:outline-none">
+      <svg
+        class="w-6 h-6 text-gray-300"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <!-- Mobile menu -->
+    <nav
+      x-cloak
+      x-show="open"
+      x-transition
+      @click.outside="open = false"
+      class="md:hidden absolute top-full left-0 w-full bg-[#13151a] border-t border-gray-700 py-4 flex flex-col items-center space-y-4 z-50"
+    >
+      <a href="/" class="font-bold hover:underline py-2">Inicio</a>
+      <a href="/somos" class="font-bold hover:underline py-2">Quiénes Somos</a>
+      <a href="/services" class="font-bold hover:underline py-2">Servicios</a>
+      <a
+        href="https://wa.me/+34689829723"
+        target="_blank"
+        class="font-bold hover:underline decoration-green-400 hover:text-green-400 py-2"
+        >Contáctanos</a
+      >
+    </nav>
+  </div>
 </header>
