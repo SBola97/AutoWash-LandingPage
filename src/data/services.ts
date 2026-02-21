@@ -2,7 +2,7 @@ export const services = [
     {
         title: "LAVADO INTERIOR-EXTERIOR COMPLETOS",
         slug: "lavado-interior-exterior-completo",
-        image: "/public/images/service1.jpg",
+        image: "/images/service1.jpg",
         description: "Limpieza detallada de carrocería, cristales, llantas y tapicería para un acabado impecable. Incluye: aspirado, lavado a mano, encerado y protección de pintura.",
         features: [
             "Limpieza de carrocería con productos especializados",
@@ -17,7 +17,7 @@ export const services = [
     {
         title: "LAVADO INTEGRAL DE TAPICERÍA",
         slug: "lavado-integral-tapiceria",
-        image: "/public/images/service2.jpg",
+        image: "/images/service2.jpg",
         description: "Limpieza profunda de asientos, alfombras y techos para eliminar manchas y olores.",
         features: [
             "Limpieza de asientos con productos especializados",
@@ -32,7 +32,7 @@ export const services = [
     {
         title: "MECÁNICA RÁPIDA",
         slug: "mecanica-rapida",
-        image: "/public/images/service3.jpg",
+        image: "/images/service3.jpg",
         description: "Servicios de mantenimiento básico como cambio de aceite, revisión de frenos y alineación.",
         features: [
             "Cambio de aceite y filtros",
@@ -47,7 +47,7 @@ export const services = [
     {
         title: "UNIDAD MÓVIL",
         slug: "unidad-movil",
-        image: "/public/images/service4.jpg",
+        image: "/images/service4.jpg",
         description: "Servicio de lavado y mantenimiento a domicilio para mayor comodidad.",
         features: [
             "Lavado completo a domicilio",
