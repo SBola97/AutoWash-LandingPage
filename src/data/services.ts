@@ -58,5 +58,20 @@ export const services = [
         get href() {
             return `/services/${this.slug}`
         }
+    },
+    {
+        title: "Tienda de accesorios",
+        slug: "tienda-accesorios",
+        image: "/images/service5.jpg",
+        description: "Tienda de accesorios para vehículos, incluyendo cubiertas, protectores de parabrisas y accesorios de decoración.",
+        features: [
+            "Cubiertas para asientos y volantes",
+            "Protectores de parabrisas y tapetes",
+            "Accesorios de decoración para el interior del vehículo"
+        ],
+        alt: "Servicio 5",
+        get href() {
+            return `/services/${this.slug}`
+        }
     }
 ]; 
